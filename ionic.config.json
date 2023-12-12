@@ -1,0 +1,7 @@
+{
+  "name": "tech-task-austral-martinlopez",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
