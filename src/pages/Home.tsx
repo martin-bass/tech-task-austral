@@ -1,22 +1,37 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Home.css';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonRouterLink,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import "./Home.css";
+
+//Components
+import PokemonList from "../components/PokemonList";
 
 const Home: React.FC = () => {
+  const reload = () => {
+    window.location.href = "/";
+  };
+
   return (
     <IonPage>
-      <IonHeader>
+      <IonHeader
+        style={{
+          "--ion-background-color": "#853c1b",
+          "--ion-text-color": "#fff",
+        }}
+      >
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonRouterLink onClick={reload} className="IonRouterLink">
+            <IonTitle>Pokemon App - Austral Challenge</IonTitle>
+          </IonRouterLink>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+      <IonContent fullscreen style={{ "--ion-background-color": "#f2d895" }}>
+        <PokemonList />
       </IonContent>
     </IonPage>
   );

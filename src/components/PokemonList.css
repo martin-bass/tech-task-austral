@@ -1,0 +1,45 @@
+.IonGrid {
+  padding: 20px;
+}
+
+.IonCard {
+  height: 90%;
+  background-color: #f9edcc;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.IonImg {
+  margin: auto;
+  height: 50%;
+  width: 200px;
+  padding-top: 10px;
+}
+
+.IonCardHeader {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f9edcc;
+}
+
+.IonCardContent {
+  background-color: #c56a1a;
+  height: 100%;
+  margin: auto;
+  color: #fff;
+  padding: 20px;
+}
+
+.IonCardContent > p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+span {
+  font-weight: normal;
+}
+
+.IonButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
